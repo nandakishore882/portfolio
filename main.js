@@ -11,7 +11,7 @@ const projects = {
         ],
         tags: ['Python', 'Deep Learning', 'Computer Vision', 'TensorFlow', 'NumPy', 'Matplotlib'],
         github: 'https://github.com/nandakishore882/Signature-Recognition-Project',
-        demo: '#'
+        demo: null
     },
     crop: {
         title: 'Crop Prediction using Machine Learning',
@@ -25,7 +25,7 @@ const projects = {
         ],
         tags: ['Python', 'Scikit-learn', 'Flask', 'Pandas', 'NumPy', 'Machine Learning'],
         github: 'https://github.com/nandakishore882/Crop-Prediction',
-        demo: '#'
+        demo: 'https://crop-prediction-ksm5.onrender.com/'
     }
 };
 
@@ -55,6 +55,10 @@ function openDrawer(key) {
     document.getElementById('projectDrawer').classList.add('open');
     document.getElementById('drawerOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
+
+    const demoBtn = document.getElementById('drawerDemo');
+    demoBtn.style.visibility = p.demo ? 'visible' : 'hidden';
+    if (p.demo) demoBtn.href = p.demo;
 }
 
 function closeDrawer() {
