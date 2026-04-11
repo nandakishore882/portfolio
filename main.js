@@ -11,7 +11,7 @@ const projects = {
         ],
         tags: ['Python', 'Deep Learning', 'Computer Vision', 'TensorFlow', 'NumPy', 'Matplotlib'],
         github: 'https://github.com/nandakishore882/Signature-Recognition-Project',
-        demo: null
+        demo: 'https://signature-recognition-project.vercel.app/'
     },
     crop: {
         title: 'Crop Prediction using Machine Learning',
