@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.4 });
 
   sections.forEach(sec => observer.observe(sec));
-    const resume = document.querySelector('a[download]');
+    const resume = document.getElementById('resumeBtn');
     if (resume) {
         const now = new Date();
         const date = now.toISOString().slice(0, 10); // 2026-03-08
